@@ -1,0 +1,56 @@
+.pie-chart {
+  width: 30%;
+  margin: 20px auto;
+  text-align: center;
+  position: relative;
+}
+
+.pie-chart canvas {
+  max-width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.pie-chart:hover canvas {
+  transform: scale(1.05);
+}
+
+/* Pie Chart Hover Effect */
+.pie-chart canvas:hover {
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.3));
+}
+
+/* Customizing Chart Colors */
+:root {
+  --color1: #D72638;  /* Soft Red */
+  --color2: #3A86FF;  /* Vivid Blue */
+  --color3: #FFBE0B;  /* Warm Yellow */
+  --color4: #8338EC;  /* Bright Purple */
+  --color5: #06D6A0;  /* Fresh Green */
+  --color6: #EF476F;  /* Bold Pink */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 600px) {
+  .pie-chart {
+    width: 80%;
+    margin: 10px auto;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  .pie-chart {
+    width: 60%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .pie-chart {
+    width: 45%;
+  }
+}
+
+@media (min-width: 993px) {
+  .pie-chart {
+    width: 30%;
+  }
+}
